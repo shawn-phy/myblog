@@ -1,6 +1,6 @@
 # Blog 
 
-## Starting Server
+## Starting Server(should be executed on git bash)
 `bin/start` - development server will start at http://127.0.0.1:4000
 
 If you want to use Moonwalk as a gem or use Github Pages, please see [this page](https://github.com/abhinavs/moonwalk/blob/master/github_pages.md)
