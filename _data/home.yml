@@ -1,7 +1,4 @@
 navbar_entries:
-  - title: about
-    url: shawn-phy.github.io
-
   - title: blog
     url: blog
 
