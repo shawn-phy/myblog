@@ -38,13 +38,15 @@ Like most other software on windows, both ruby and jekyll can be (easily) instal
 2. Click the checkbox to `run ridk install` on the final screen of the Ruby install.
 3. In the command window that appears, choose option 3 to `install MSYS2 and the MINGW development toolchain` if you dont have them already, if either of them are present the installer will skip that part.
 4. Open a new command window from the Start menu and install Jekyll on Windows with the following command:
-```gem install jekyll bundler```
+```
+gem install jekyll bundler
+```
 5. Verify the install by issuing the ```jekyll -v command``` the command should return the version number you currently have installed. *incase the command `jekyll -v` returns errors you should reboot your computer else if errors still persist then you should open an issue on the github page*
 ![output](assets\images\jekyllversionoutput.png)
 
 ### Installing on Ubuntu.
 1. To install ruby and other [prerequisites](https://jekyllrb.com/docs/installation/#requirements)
- ``` shell
+ ``` 
  sudo apt-get install ruby-full build-essential zlib1g-dev
  ```
 
@@ -107,4 +109,34 @@ In the case of Minima, you see only the following files in your Jekyll site dire
 The `Gemfile` and `Gemfile.lock` files are used by Bundler to keep track of the required gems and gem versions you need to build your Jekyll site.
 
 More info can be found on the official [documentation](https://jekyllrb.com/docs/themes/) it also outlines the steps involved in creating your own custom theme or if you want to become a theme developer rather than a theme consumer. 
+
+## post installation steps on windows
+Windows requires some more installation steps to use it effectively. 
+
+### time zone management
+Since Windows doesn’t have a native source of zoneinfo data, the Ruby Interpreter doesn’t understand IANA Timezones. Using them had the `TZ` environment variable default to UTC/GMT 00:00.
+
+Though Windows users could alternatively define their blog’s timezone by setting the key to use the POSIX format of defining timezones, it wasn’t as user-friendly when it came to having the clock altered to changing DST-rules.
+
+Jekyll now uses a rubygem to internally configure Timezone based on established [IANA Timezone Database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). 
+
+While ‘new’ blogs created with Jekyll v3.4 and greater, will have the following added to their `Gemfile` by default, existing sites will have to update their `Gemfile` (and installed gems) to enable development on Windows: 
+``` ruby
+# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
+# and associated library.
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", ">= 1", "< 3"
+  gem "tzinfo-data"
+end
+```
+
+### auto regeneration 
+Jekyll uses the `listen` gem to watch for changes when the `--watch` switch is specified during a build or serve. While `listen` has built-in support for UNIX systems, it may require an extra gem for compatibility with Windows.
+
+Add the following to the Gemfile for your site if you have issues with auto-regeneration on Windows alone:
+``` ruby 
+gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
+```
+
+With these steps you should be able to install and use jekyll, effectively on your platform. Remeber to get creative with themes. 
 
