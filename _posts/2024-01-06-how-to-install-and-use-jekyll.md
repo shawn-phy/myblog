@@ -27,14 +27,19 @@ There are independent installation instructions for every platform and this arti
 - [RubyGems](https://rubygems.org/pages/download) (check your Gems version using `gem -v`)
 - GCC and Make (check versions using `gcc -v`,`g++ -v`, and `make -v`)
 
-### Installing on windows
+### Installing on windows.
 The documentation mentions that windows is not an ideal platform for development because it is not an officially supported platform. However, it can be used with the proper tweaks. 
 
-Like most other software on windows, both ruby and jekyll can be installed using a single installer. The [ruby installer](https://rubyinstaller.org/) is a self-contained Windows-based installer that includes the Ruby language, an execution environment, important documentation, and more. the documentation also says *We only cover RubyInstaller-2.4 and newer here. Older versions need to install the Devkit manually.*
+Like most other software on windows, both ruby and jekyll can be (easily) installed using a single installer. The [ruby installer](https://rubyinstaller.org/) is a self-contained Windows-based installer that includes the Ruby language, an execution environment, important documentation, and more.
+
+ The documentation also says *"We only cover RubyInstaller-2.4 and newer here. Older versions need to install the Devkit manually."*
 
 1. Download and install Ruby and the associated Devkit from [ruby devkit](https://rubyinstaller.org/downloads/). The default options should work just fine without glitches.
 2. Click the checkbox to `run ridk install` on the final screen of the Ruby install.
 3. In the command window that appears, choose option 3 to `install MSYS2 and the MINGW development toolchain` if you dont have them already, if either of them are present the installer will skip that part.
-4. Open an new command window and install Jekyll on Windows with the following command:
+4. Open a new command window from the Start menu and install Jekyll on Windows with the following command:
 ```gem install jekyll bundler```
-5. Verify the install by issuing the ```jekyll -v command``` the command should return the version number you currently have installed. 
+5. Verify the install by issuing the ```jekyll -v command``` the command should return the version number you currently have installed. *incase the command `jekyll -v` returns errors you should reboot your computer else if errors still persist then you should open an issue on the github page*
+![output](assets\images\jekyllversionoutput.png)
+
+### Installing on Ubuntu.
