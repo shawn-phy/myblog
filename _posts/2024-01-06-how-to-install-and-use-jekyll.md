@@ -43,3 +43,68 @@ Like most other software on windows, both ruby and jekyll can be (easily) instal
 ![output](assets\images\jekyllversionoutput.png)
 
 ### Installing on Ubuntu.
+1. To install ruby and other [prerequisites](https://jekyllrb.com/docs/installation/#requirements)
+ ``` shell
+ sudo apt-get install ruby-full build-essential zlib1g-dev
+ ```
+
+Readers are advised to avoid installing ruby gems as root user for obvious security and compatibility issues. Instead, set up a gem installation directory for your user account. 
+2. Add environment variables to your `~/.bashrc` file to configure the gem installation path by running the following commands. 
+``` shell
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+3. Finally to install jekyll and bundler. 
+``` shell
+gem install jekyll bundler
+```
+You are ready to start using jekyll. 
+
+## creating your first blog
+1. Create a new blog with the command
+```
+jekyll new myblog
+```
+2. From the myblog folder created in the previous step issue the following command
+```
+cd myblog
+```
+3. To launch the server run the following command 
+```
+bundle exec jekyll serve
+```
+4. Open a browser to http://localhost:4000 and view your Jekyll blog. 
+
+## using custom themes
+Jekyll like most other JAMstacks has numerous themes that specify plugins and package up assets, layouts, includes, and stylesheets in a way that can be overridden by your site’s content.
+Many themes can be found on websites such as: 
+- [GitHub.com #jekyll-theme repos](https://github.com/topics/jekyll-theme)
+- [jamstackthemes.dev](https://jamstackthemes.dev/ssg/jekyll/)
+- [jekyllthemes.org](https://jekyllthemes.org)
+- [jekyllthemes.io](https://jekyllthemes.io)
+- [jekyll-themes.com](https://jekyll-themes.com)
+
+personally my favorite is jamstackthemes.dev because it has templates for most other SSG's so you have a very wide range of choice. 
+
+### understanding gem-based themes. 
+By default the theme used by jekyll is the [minima](https://github.com/jekyll/minima) theme. Whenever you start development on a new jekyll site using the command `jekyll new <PATH>` it starts a gem based theme.
+
+ With gem-based themes, some of the site’s directories (such as the `assets`, `_data`, `_layouts`, `_includes`, and `_sass` directories) are stored in the theme’s gem, hidden from your immediate view. Yet all of the necessary directories will be read and processed during Jekyll’s build process.
+
+In the case of Minima, you see only the following files in your Jekyll site directory:
+> .<br>
+├── Gemfile<br>
+├── Gemfile.lock<br>
+├── _config.yml<br>
+├── _posts<br>
+│    └── 2016-12-04-welcome-to-jekyll.markdown<br>
+├── about.markdown<br>
+└── index.markdown<br>
+
+The `Gemfile` and `Gemfile.lock` files are used by Bundler to keep track of the required gems and gem versions you need to build your Jekyll site.
+
+More info can be found on the official [documentation](https://jekyllrb.com/docs/themes/) it also outlines the steps involved in creating your own custom theme or if you want to become a theme developer rather than a theme consumer. 
+
