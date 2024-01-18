@@ -12,6 +12,10 @@ twitter:
     username: shawn phy # update or delete this
     card: summary_large_image
 
+collections:
+  musings:
+    output: true
+
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
 remote_theme: abhinavs/moonwalk
 
