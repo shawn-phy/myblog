@@ -18,5 +18,19 @@ Obviosuly different websites are interested in different metrics, such as an eco
 Now in the age of [data mining in business trends](https://medium.com/dare-to-be-better/how-to-identify-patterns-and-trends-to-drive-business-success-959049a5d5aa) sifting through large volumes of data collected, to gain an understanding or derive correlations is how you identify which metrics matter most to your business. This can be ascertained by assessing your goals. If you’re hoping to skyrocket to number one on Google’s first page, you want to track metrics that align with search performance. That might mean [tracking which keywords you rank](https://neilpatel.com/blog/ubersuggest-rank-tracking/) for using a tool like Ubersuggest. If your quarterly goal is to increase web sales, then you should track conversions, as well as how visitors are behaving on your site and when cart abandonment occurs.
 
 ### key metrics overally
-1. Website speed
-while this may sound like its a single metric, its a collection of mini. 
+#### 1. Website speed
+while this may sound like its a single metric, its a collection of many more mini metrics. 
+
+This metric is particularly useful because [attention spans seem to be decreasing.](https://www.digitalinformationworld.com/2020/02/report-shows-that-attention-spans-are-shortening.html). Some of the insights include: 
+
+##### Time to tittle 
+This time measurement refers to the amount of time from a visitor’s website request to the moment your site title manifests on the browser tab. This matters for visitors as a speedy title appearance ensures them that your site is legitimate. 
+
+##### Time to start render
+This time measurement refers to the amount of time elapsed between a user request and when content materialized in-browser.
+
+##### Time to interact
+Referring to the time it takes from request origination and when the visitor can take an action (click on links, scroll page, type, etc.), time to interact is also vital when it comes to how long a visitor will stay on your site.
+
+
+
