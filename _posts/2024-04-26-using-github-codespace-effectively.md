@@ -15,3 +15,4 @@ A codespace is a development environment that's hosted in the cloud. You can cus
 
 You can connect to your codespaces from your browser, from Visual Studio Code, from the JetBrains Gateway application, or by using GitHub CLI. When you connect, you are placed within the Docker container. You have limited access to the outer Linux virtual machine host.
 ![image](assets/images/codespaceimage.png)
+
