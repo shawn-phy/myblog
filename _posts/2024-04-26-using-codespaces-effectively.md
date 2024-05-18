@@ -58,4 +58,9 @@ The GitHub Codespaces extension requires VS Code October 2020 Release 1.51 or la
 
 ## Using the workspace with jupyter notebooks
 If you followed the above instructions faithfully you should now have an active workspace that you can share with colleagues or access via web browser. To use this with jupyter notebooks:
-1. 
+1. create your `notebook.ipynb` file. 
+2. Open the notebook within vs code, by default there will be no kernel selected.Click the `select kernel` button 
+![image](assets/images/imagekernel.png). 
+3. When the kernel selection window show up click the `select another kernel` option, 
+![image](assets/images/imageselect.png)
+4. 
