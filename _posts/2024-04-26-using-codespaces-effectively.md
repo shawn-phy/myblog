@@ -6,7 +6,7 @@ author: Shawn Phy
 # Introduction
 Often times when training a machine learning model I end up having to use either google colab or kaggle. The reason for this is because my flimsy laptop might not be cut out for the job or if it does, it will take a ridiculous amount of time. Absolutely unnaceptable!
 
-They also say beauty lies in the eyes of the beholder but I believe the way I have setup my code editor looks very pretty(like any developer does). In light of this I might not want to give up my local development environment for a cloud based one. 
+They also say beauty lies in the eyes of the beholder but I believe the way I have setup my code editor looks very pretty and convenient(like any developer does). In light of this I might not want to give up my local development environment for a cloud based one. 
 
 Enter github and azure workspaces 
 
@@ -17,4 +17,4 @@ You can connect to your codespaces from your browser, from Visual Studio Code, f
 ![image](assets/images/codespaceimage.png)
 
 # Azure workspace 
-In azure, workspaces take a more collaborative definiton and 
+In azure, workspaces take a more collaborative definition and more geared towards machine learning. For machine learning teams, the workspace is a place to organize their work. 
