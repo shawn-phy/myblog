@@ -4,7 +4,7 @@ author: Shawn Phy
 --- 
 
 ## What is hot reloading
-Often during development of any python or react native application you might need to change multiple files and see the results instantly but you dont need to the entire application to reload. This can sometimes be time consuming and taxing on your machine. 
+Sometimes during development of any python or react native application you might need to change multiple files and see the results instantly but you dont need to the entire application to reload. This can sometimes be time consuming and taxing on your machine. 
 
 Enter `Hot reloading` this is a feature that allows developers to see changes made to files in real time. It eliminates the need to manually refresh the page furthermore, it preserves the state of the app. Any functions that were in use before the reload will be available after the reload. 
 
@@ -19,4 +19,12 @@ uvicorn main:app --reload
 In the above command `--reload` is used to indicate that the server should run a hot reload. 
 
 If you need to do a live reload you could use the vs code extension. 
+You will need to install the extension first into vs code. 
+
+![image](assets/images/liveserverinstall.png)
+
+then as you do your development and you might need to do a live reload of the whole project, simply click the button labelled `go live` that appears in vs codes notification bar
+![image](assets/images/golive.png)
+
+
 
