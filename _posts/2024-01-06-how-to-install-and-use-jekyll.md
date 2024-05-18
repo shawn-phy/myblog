@@ -14,7 +14,9 @@ The content of static web pages remain stationary irrespective of the number of 
 Other static site generators include hugo, next.js, angular, gatsby.js. 
 
 ## Jekyll
-![](/assets/images/jekyll.png)
+
+![image](/assets/images/jekyll.png)
+
 Jekyll renders [Markdown](https://www.markdownguide.org/) or Textile and [Liquid templates](https://shopify.github.io/liquid/), and produces a complete, static website ready to be served by Apache HTTP Server, Nginx or another web server. If you are interested in creating your own jekyll themes you can study how the [liquid templating engnine](https://shopify.github.io/liquid/basics/introduction/) works. 
 
 By default, Jekyll uses the [kramdown](https://kramdown.gettalong.org/) Markdown processor with stock settings, but you can enable other kramdown options or even switch Jekyll to another Markdown processor.
