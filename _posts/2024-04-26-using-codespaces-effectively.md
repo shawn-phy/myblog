@@ -63,4 +63,8 @@ If you followed the above instructions faithfully you should now have an active 
 ![image](assets/images/imagekernel.png). 
 3. When the kernel selection window show up click the `select another kernel` option, 
 ![image](assets/images/imageselect.png)
-4. 
+4. Click the `connect to codespace` option. 
+![image](assets/images/connectcodespace.png)
+5. it will take a short while to load and provide you with kernels you can choose. 
+![image](assets/images/serverselect.png)
+6. Bingo, now you have a codespace that works with your jupyter notebook. You are now a certified machine learning engineer. Let the whole of Linkedin know about your super major achievement. 
