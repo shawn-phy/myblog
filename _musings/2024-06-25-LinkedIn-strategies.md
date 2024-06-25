@@ -12,6 +12,8 @@ You can also join groups focused on various companies, industries, and occupatio
 The primary use of LinkedIn by software development companies is in marketing which we shall analyze in the next chapters 
 
 ## Key marketing strategies
-The Core goal of any marketing campaign is to ensure a continuous flow of clients and customers. Software development companies in particular need a wide market reach to get more clients, this speaks for itself when the products the company churns out are products in demand by the consumers a classic corollary of the statement “Do one thing and do it well” ~ Jan Koum. 
+The Core goal of any marketing campaign is to ensure a continuous flow of clients and customers. Software development companies in particular need a wide market reach to get more clients, this speaks for itself when the products the company churns out are products in demand by the consumers a classic corollary of the statement *“Do one thing and do it well” ~ Jan Koum*. 
+
 Common marketing strategies include: 
 ### Optimizing Profile pages
+They say the devil is in the details, I say the client is a very picky demon(sometimes). The average customer will start looking for a potential service provider with a very vaguely written project scope and a solid idea on paper. While scouting on LinkedIn they will openly discredit any companies with a shady profile. the way to improve a profile is by posting engaging content regularly and encouraging employees to follow and share from the page. These practices all add up to a popular tenet in modern search engines; Search engine Optimization which works by optimizing search rankings and increasing visibility.
