@@ -35,7 +35,7 @@ The GitHub Codespaces extension requires VS Code October 2020 Release 1.51 or la
 1. Use the Visual Studio Code Marketplace to install the GitHub Codespaces extension.
 2. In VS Code, in the Activity Bar, click the Remote Explorer icon.
 ![image](assets/images/image.png) 
-> *NOTE* If the Remote Explorer is not displayed in the Activity Bar:
+> *NOTE* If the Remote Explorer is not displayed in the Activity Bar:<br>
 > a. Access the Command Palette. For example, by pressing `Shift` + `Command`+`P` (Mac) / `Ctrl`+`Shift`+`P` (Windows/Linux).<br>
 > b. Type: `details`. and click codespace details. 
 3. Select "GitHub Codespaces" from the dropdown at the top of the "Remote Explorer" side bar, if it is not already selected.
