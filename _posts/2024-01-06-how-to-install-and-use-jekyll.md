@@ -15,7 +15,7 @@ Other static site generators include hugo, next.js, angular, gatsby.js.
 
 ## Jekyll
 
-![image](\assets\images\jekyllimage.png)
+![image](assets\images\jekyllimage.png)
 
 Jekyll renders [Markdown](https://www.markdownguide.org/) or Textile and [Liquid templates](https://shopify.github.io/liquid/), and produces a complete, static website ready to be served by Apache HTTP Server, Nginx or another web server. If you are interested in creating your own jekyll themes you can study how the [liquid templating engnine](https://shopify.github.io/liquid/basics/introduction/) works. 
 
