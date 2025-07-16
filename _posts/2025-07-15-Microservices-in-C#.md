@@ -26,3 +26,4 @@ Here are some key characteristics of microservices:
 - They communicate with each other by using well-defined APIs. Internal implementation details of each service are hidden from other services.
 - They support polyglot programming. For example, the microservices that make up a web application don't need to share the same technology stack, libraries, or frameworks.
 
+## Deployment 
