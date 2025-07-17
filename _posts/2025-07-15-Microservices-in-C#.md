@@ -26,4 +26,9 @@ Here are some key characteristics of microservices:
 - They communicate with each other by using well-defined APIs. Internal implementation details of each service are hidden from other services.
 - They support polyglot programming. For example, the microservices that make up a web application don't need to share the same technology stack, libraries, or frameworks.
 
-## Deployment 
+## What role do containers play? 
+Containerization is an approach to software development in which an application or service, its dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as a container image. You can test the containerized application as a unit, and deploy it as a container image instance on the host operating system.
+
+Software containers act as a standard unit of software deployment that can contain different code and dependencies. This is similar to how shipping containers transport goods of all kinds by ship, train, or truck. Developers and IT professionals can use containerized software to deploy code and dependencies across environments with little or no modification.
+
+If it sounds like containerizing an application might be a great way to implement the microservices architecture pattern, it is. The benefits of using containers line up almost exactly with the benefits of using a microservices architecture.
